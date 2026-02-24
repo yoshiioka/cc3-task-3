@@ -1,7 +1,5 @@
-import java.util.*;
-
 public class Student {
-    // Private attributes to prevent "leaks" 
+    
     private String SURNAME, FIRSTNAME, MIDDLENAME, GENDER, BIRTHMONTH, COURSE;
     private int AGE, BIRTHYEAR, STUDENTID, YEAR;
 
@@ -18,7 +16,7 @@ public class Student {
         this.YEAR = builder.YEAR;
     }
 
-    // Getters as defined in your diagram 
+    
     public String getSurname() { return SURNAME; }
     public String getFirstName() { return FIRSTNAME; }
     public String getMiddleName() { return MIDDLENAME; }
@@ -30,6 +28,7 @@ public class Student {
     public String getCourse() { return COURSE; }
     public int getYear() { return YEAR; }
 
+   
     public static class Builder {
         private String SURNAME, FIRSTNAME, MIDDLENAME, GENDER, BIRTHMONTH, COURSE;
         private int AGE, BIRTHYEAR, STUDENTID, YEAR;
